@@ -78,6 +78,18 @@ int esp32c3_bringup(void);
  ****************************************************************************/
 
 #ifdef CONFIG_DEV_GPIO
+
+
+#define GPIO_BTN_USER1    (GPIO_INPUT|GPIO_CNF_INFLOAT|GPIO_MODE_INPUT|\
+                           GPIO_EXTI|GPIO_PORTA|GPIO_PIN0)
+
+#define GPIO_BTN_USER2    (GPIO_INPUT|GPIO_CNF_INFLOAT|GPIO_MODE_INPUT|\
+                           GPIO_EXTI|GPIO_PORTA|GPIO_PIN1)
+
+#define MIN_IRQBUTTON     BUTTON_USER1
+#define MAX_IRQBUTTON     BUTTON_USER2
+#define NUM_IRQBUTTONS    (BUTTON_USER1 - BUTTON_USER2 + 1)
+
 int esp32c3_gpio_init(void);
 #endif
 
