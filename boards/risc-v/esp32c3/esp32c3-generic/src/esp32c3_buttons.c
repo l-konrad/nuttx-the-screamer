@@ -52,6 +52,13 @@
 #include "esp32c3-generic.h"
 #include <arch/board/board.h>
 
+
+
+static const uint32_t g_buttons[NUM_BUTTONS] =
+{
+  GPIO_BTN_USER1, GPIO_BTN_USER2
+};
+
 /****************************************************************************
  * Public Functions
  ****************************************************************************/

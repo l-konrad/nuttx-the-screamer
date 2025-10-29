@@ -38,5 +38,31 @@
 
 #define BUTTON_BOOT  9
 
+
+#define NUM_BUTTONS       2
+
+#define BUTTON_USER1      0
+#define BUTTON_USER2      1
+#define BUTTON_USER1_BIT  (1 << BUTTON_USER1)
+#define BUTTON_USER2_BIT  (1 << BUTTON_USER2)
+
+/* LED definitions **********************************************************/
+
+/* Define how many LEDs this board has (needed by userleds) */
+
+#define BOARD_NLEDS       1
+
+/* The board has only one controllable LED */
+
+#define LED_STARTED       0  /* No LEDs */
+#define LED_HEAPALLOCATE  1  /* LED1 on */
+#define LED_IRQSENABLED   2  /* LED2 on */
+#define LED_STACKCREATED  3  /* LED1 on */
+#define LED_INIRQ         4  /* LED1 off */
+#define LED_SIGNAL        5  /* LED2 on */
+#define LED_ASSERTION     6  /* LED1 + LED2 */
+#define LED_PANIC         7  /* LED1 / LED2 blinking */
+
+
 #endif /* __BOARDS_RISCV_ESP32C3_ESP32C3_GENERIC_INCLUDE_BOARD_H */
 

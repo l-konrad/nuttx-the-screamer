@@ -76,7 +76,7 @@
  * used.
  */
 
-#define GPIO_IRQPIN  9
+#define GPIO_IRQPIN  3
 
 /* Dedicated GPIO pins. GPIO4 and GPIO5 is used as an example, any other
  * GPIOs could be used.
