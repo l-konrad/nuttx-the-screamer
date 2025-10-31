@@ -50,8 +50,8 @@
 
 #ifdef CONFIG_DEV_GPIO
 
-#define GPIO_BTN_USER1    9  /* GPIO0 */
-#define GPIO_BTN_USER2    1  /* GPIO1 */
+#define GPIO_BTN_USER1    9  /* GPIO9 */
+#define GPIO_BTN_USER2    10  /* GPIO10 */
 
 #define MIN_IRQBUTTON     BUTTON_USER1
 #define MAX_IRQBUTTON     BUTTON_USER2
