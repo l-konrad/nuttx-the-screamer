@@ -119,12 +119,9 @@ endif
 
 CHIP_CSRCS += esp_efuse.c
 
+LDFLAGS += -u esp_system_include_startup_funcs
 ifeq ($(CONFIG_ESPRESSIF_EFUSE),y)
 LDFLAGS    += -u esp_efuse_startup_include_func
-endif
-
-ifeq ($(CONFIG_ESPRESSIF_USE_ULP_RISCV_CORE), y)
-include common$(DELIM)espressif$(DELIM)/esp_ulp.mk
 endif
 
 ifeq ($(CONFIG_ESPRESSIF_WIRELESS),y)
